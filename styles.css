@@ -1,0 +1,45 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-image: url('fondo2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el contenedor tenga al menos el 100% de la altura de la ventana */
+}
+
+.letter {
+    background-color: rgba(155, 155, 155, 0.815);
+    padding: 40px;
+    border-radius: 20px; /* Se ha reducido el radio de borde para una apariencia más suave */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: Arial, sans-serif; /* Fuente de respaldo en caso de que la fuente principal no esté disponible */
+}
+
+.button {
+    display: inline-block;
+    background-color: #805b91;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none; /* Elimina el resplandor predeterminado del botón al hacer clic */
+}
+
+.button:hover,
+.button:focus { /* Agrega estilos para el estado de foco del botón */
+    background-color: #654073;
+}

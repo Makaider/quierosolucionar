@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Botones con Animaciones</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Esto evitará que el fondo haga scroll */
+    position: relative;
+    background-image: url('gato.jpg'); /* Cambia 'ruta_de_la_imagen.jpg' por la ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el cuerpo */
+    background-position: center; /* Centra la imagen de fondo */
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center; /* Esto centra los botones horizontalmente */
+    position: relative; /* Asegura que los botones estén por encima del fondo */
+    z-index: 1; /* Asegura que los botones estén por encima del fondo */
+  }
+
+  .button {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; /* Color del texto */
+  }
+
+  .button:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.1);
+    animation: bounceFotos 0.5s ease infinite;
+  }
+
+  /* Animaciones personalizadas */
+  @keyframes bounceFotos {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="button-container">
+  <a href="index2.html" class="button">Una pequeña carta</a>
+  <a href="index3.html" class="button">Fotos varias</a>
+  <a href="quieres.html" class="button">Algo Tonto</a>
+</div>
+</body>
+</html>
